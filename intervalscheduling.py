@@ -6,6 +6,7 @@ class Solution:
             endpoint = 0
             beginpoint = 0
             append = []
+            print(intervals)
             for b in range(len(intervals)):
                 append.append([])
                 for i in range(len(intervals)):
@@ -20,7 +21,7 @@ class Solution:
                 if len(i) > greatest:
                     greatest = len(i)
                     best = i
-
+            print(best)
             return best
                 
                  
