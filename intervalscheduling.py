@@ -23,14 +23,14 @@ class Solution:
             best = 0
             greatestbegin = 0
             for i in append1:
-                if len(i) == greatest:
                 if len(i) > greatest:
                     greatest = len(i)
                     best = i
-                if i[0][0] > greatestbegin:
-                    greatestbegin = i[0][0]
-                    greatest = len(i)
-                    best = i
+                if len(i) == greatest:
+                    if i[0][0] > greatestbegin:
+                        greatestbegin = i[0][0]
+                        greatest = len(i)
+                        best = i
             print(best)
             return best
                 
