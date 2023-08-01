@@ -9,7 +9,7 @@ class Solution:
             print(intervals)
             for b in range(len(intervals)):
                 append1.append([])
-                for i in range(0,len(intervals),b):
+                for i in range(0,len(intervals),b+1):
                     if  intervals[i][1] > endpoint:
                         if  intervals[i][0] >= endpoint:
                             endpoint = intervals[i][1]
