@@ -11,7 +11,7 @@ class Solution:
                 append1.append([])
                 for i in range(len(intervals)):
                     if  intervals[i][1] > endpoint:
-                        if  intervals[i][0] < endpoint and intervals[i][0] > beginpoint:
+                        if  intervals[i][0] > endpoint:
                             endpoint = intervals[i][1]
                             beginpoint = intervals[i][0]
                             print((beginpoint, endpoint))
