@@ -15,7 +15,7 @@ class Solution:
                             endpoint = intervals[i][1]
                             beginpoint = intervals[i][0]
                             print((beginpoint, endpoint))
-                            append1.append[b]((beginpoint, endpoint))
+                            append1[b] = (beginpoint, endpoint)
 
             print(append1)
             greatest = 0
