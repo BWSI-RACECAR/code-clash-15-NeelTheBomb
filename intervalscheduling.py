@@ -14,6 +14,7 @@ class Solution:
                         if  intervals[i][0] < endpoint and intervals[i][0] > beginpoint:
                             endpoint = intervals[i][1]
                             beginpoint = intervals[i][0]
+                            print(beginpoint, endpoint)
                             append1.append[b]((beginpoint, endpoint))
 
             print(append1)
