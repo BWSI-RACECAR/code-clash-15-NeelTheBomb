@@ -5,21 +5,21 @@ class Solution:
 
             endpoint = 0
             beginpoint = 0
-            append = []
+            append1 = []
             print(intervals)
             for b in range(len(intervals)):
-                append.append([])
+                append1.append([])
                 for i in range(len(intervals)):
                     if  intervals[i][1] > endpoint:
                         if  intervals[i][0] < endpoint and intervals[i][0] > beginpoint:
                             endpoint = intervals[i][1]
                             beginpoint = intervals[i][0]
-                            append.append[b]((beginpoint, endpoint))
+                            append1.append[b]((beginpoint, endpoint))
 
             print(append)
             greatest = 0
             best = 0
-            for i in append:
+            for i in append1:
                 if len(i) > greatest:
                     greatest = len(i)
                     best = i
