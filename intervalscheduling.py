@@ -6,6 +6,7 @@ class Solution:
             endpoint = 0
             beginpoint = 0
             append1 = []
+            intervals = sorted(intervals, key=lambda : x[1])
             print(intervals)
             for b in range(len(intervals)):
                 append1.append([])
